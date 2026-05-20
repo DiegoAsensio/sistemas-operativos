@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas Operativos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sistemas Operativos</h1>
+    <p class="subtitulo">Diseño y Programación Web</p>
+  </header>
+
+  <main>
+    <section class="tarjetas">
+      <div class="tarjeta" id="tarjeta-git">
+        <h2>¿Qué es Git?</h2>
+        <p>Git es un sistema de control de versiones distribuido que permite rastrear cambios en el código fuente.</p>
+        <button onclick="mostrarInfo('git')">Ver más</button>
+      </div>
+
+      <div class="tarjeta" id="tarjeta-github">
+        <h2>¿Qué es GitHub?</h2>
+        <p>GitHub es una plataforma en la nube que aloja repositorios Git y facilita la colaboración entre desarrolladores.</p>
+        <button onclick="mostrarInfo('github')">Ver más</button>
+      </div>
+
+      <div class="tarjeta" id="tarjeta-ramas">
+        <h2>¿Qué son las Ramas?</h2>
+        <p>Las ramas permiten trabajar en nuevas funcionalidades sin afectar el código principal del proyecto.</p>
+        <button onclick="mostrarInfo('ramas')">Ver más</button>
+      </div>
+    </section>
+
+    <section class="info-extra" id="info-extra">
+      <p id="texto-info"></p>
+    </section>
+
+    <section class="commits">
+      <h2>Registro de Commits</h2>
+      <ul id="lista-commits"></ul>
+      <div class="form-commit">
+        <input type="text" id="input-commit" placeholder="Descripción del commit..." />
+        <button onclick="agregarCommit()">Agregar Commit</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Actividad 06 — Trabajo colaborativo con Git y GitHub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
